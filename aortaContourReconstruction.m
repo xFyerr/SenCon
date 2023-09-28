@@ -31,21 +31,11 @@ for i = 1:length(d)
             C(j / 2, 2,i) = A(j);
         end
     end
-
     [rowC,~] = size(C);
-
     rotationQuaternion = quaternion(B(4,1),B(5,1),B(6,1),B(7,1));
     rotationMatrix = rotmat(rotationQuaternion,"point");
-
-    % curlyRotation = kron(eye(120),rotationMatrix);
-
     translationEM = B(1:3,1);
-
-    % curlyTranslationEM = kron(ones(120,1),translationEM);
-
     softInsertionCell{1,i} = rotationMatrix*C(:,:,i)'+translationEM;
-
-
 end
 
 %% Get the number of files
@@ -77,21 +67,11 @@ for i = 1:length(d)
             C(j / 2, 2,i) = A(j);
         end
     end
-
     [rowC,~] = size(C);
-
     rotationQuaternion = quaternion(B(4,1),B(5,1),B(6,1),B(7,1));
     rotationMatrix = rotmat(rotationQuaternion,"point");
-
-    % curlyRotation = kron(eye(120),rotationMatrix);
-
     translationEM = B(1:3,1);
-
-    % curlyTranslationEM = kron(ones(120,1),translationEM);
-
     softPullbackCell{1,i} = rotationMatrix*C(:,:,i)'+translationEM;
-
-
 end
 
 %% Plot the results
@@ -136,7 +116,10 @@ colorbar;
 c = colorbar;
 c.Label.String = 'Time Step';
 
+% Add the 3D aorta model
+ShowModel;
+
 % Adjust the view and lighting as needed
-view(3);
+view(45,45);
 lighting gouraud;
 hold off;
