@@ -29,3 +29,5 @@ abstract: >-
   vessel wall, and electromagnetic poses for each IVUS
   snapshot.
 commit: commit 2f51e00854c11092ea1b5c3abe9066319442c1ad
+version: '1.0'
+date-released: '2023-09-09'
