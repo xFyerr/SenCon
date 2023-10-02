@@ -1,0 +1,31 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  3D control and path planning for the surgical robotic
+  catheter in the aorta based on ultrasound
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Suleman
+    family-names: Sial
+    email: suleman.sial@student.uts.edu.au
+  - given-names: 'Soorya '
+    family-names: Koonath
+    email: soorya.konath@student.uts.edu.au
+  - given-names: Yagnik
+    family-names: Patel
+    email: yagnik.patel@student.uts.edu.au
+repository-code: 'https://github.com/xFyerr/SenCon.git'
+url: 'https://github.com/xFyerr/SenCon'
+abstract: >-
+  This project aims to create a path planning algorithm for
+  precise control of a surgical robot catheter travelling
+  through the aortic root. This process utilises real-time
+  intravascular ultrasound (IVUS) images, XY data for inner
+  vessel wall, and electromagnetic poses for each IVUS
+  snapshot.
+commit: commit 2f51e00854c11092ea1b5c3abe9066319442c1ad
