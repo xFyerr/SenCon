@@ -10,15 +10,15 @@ message: >-
   metadata from this file.
 type: software
 authors:
+  - given-names: Yagnik
+    family-names: Patel
+    email: yagnik.patel@student.uts.edu.au
   - given-names: Suleman
     family-names: Sial
     email: suleman.sial@student.uts.edu.au
   - given-names: 'Soorya '
-    family-names: Koonath
+    family-names: Konath
     email: soorya.konath@student.uts.edu.au
-  - given-names: Yagnik
-    family-names: Patel
-    email: yagnik.patel@student.uts.edu.au
 repository-code: 'https://github.com/xFyerr/SenCon.git'
 url: 'https://github.com/xFyerr/SenCon'
 abstract: >-
